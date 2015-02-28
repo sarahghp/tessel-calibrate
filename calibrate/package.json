@@ -1,0 +1,30 @@
+{
+  "name": "tessel-calibrate",
+  "version": "0.1.0",
+  "description": "Library to run calibration function for Tessel modules.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sarahgp/tessel-calibrate.git"
+  },
+  "author": {
+    "name": "Sarah Groff-Palermo",
+    "email": "hi@sarahgp.com"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "directories": {
+    "example": "examples"
+  },
+  "keywords": [
+    "tessel",
+    "calibrate"
+  ],
+  "dependencies": {
+    "rsvp": "^3.0.16",
+  },
+  "bugs": {
+    "url": "https://github.com/sarahgp/tessel-calibrate/issues"
+  },
+  "homepage": "https://github.com/sarahgp/tessel-calibrate"
+}
