@@ -22,6 +22,11 @@ Modules supported include:
 * [Grove Ultrasonic](https://www.npmjs.com/package/tessel-sen10737p)
 * [Pulse Sensor](https://www.npmjs.com/package/pulsesensor)
 
+## Installation
+```
+npm install tessel-calibrate --save
+```
+
 ## Calling `calibrate.get`
 
 The function takes two required arguments, the module you are using and the method name, the latter as a string. Eg: `calibrate.get(ambient, ‘getSoundbuffer’);`
