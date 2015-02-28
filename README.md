@@ -2,18 +2,19 @@
 
 Tessel-Calibrate is a lightweight package that allows you to get a buffer of values, plus the high and low, from a number of Tessel modules.
 
-Any module with a method formatted `module.method(callback(err, data){ ... })` can be called with calibrate.get(). The resulting values can be accessed via a promise:
+Any module with a method formatted `module.method(callback(err, data){ ... })` can be called with `calibrate.get()`. The resulting values can be accessed via a promise:
 ```
-(calibrate.get().then()) 
+calibrate.get().then() 
 ```
 or as an event: 
 ```
-(calibrate.get(); calibrate.on(‘calibrated’);)
+calibrate.get(); 
+calibrate.on(‘calibrated’, callback);
 ```
 
-[See examples.](https://github.com/sarahgp/tessel-calibrate/blob/master/examples/calibrate-examples.js).
+[See examples.](https://github.com/sarahgp/tessel-calibrate/blob/master/examples/calibrate-examples.js)
 
-This includes:
+Modules supported include:
 * [Ambient](https://github.com/tessel/ambient-attx4)
 * [Climate](https://github.com/tessel/climate-si7005)
 * [Color Sensor](https://www.npmjs.com/package/rgb-tcs34725)
