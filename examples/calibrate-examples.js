@@ -4,7 +4,7 @@
 var tessel = require('tessel'),
     ambientlib = require('ambient-attx4'),
     ambient = ambientlib.use(tessel.port['C']),
-    calibrate = require('calibrate');
+    calibrate = require('tessel-calibrate');
 
 // Using event syntax
 ambient.on('ready', function(){

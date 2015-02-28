@@ -21,7 +21,7 @@
     "calibrate"
   ],
   "dependencies": {
-    "rsvp": "^3.0.16",
+    "rsvp": "^3.0.16"
   },
   "bugs": {
     "url": "https://github.com/sarahgp/tessel-calibrate/issues"
