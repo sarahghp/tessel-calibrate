@@ -2,13 +2,13 @@
 
 Tessel-Calibrate is a lightweight package that allows you to get a buffer of values, plus the high and low, from a number of Tessel modules.
 
-Any module with a method formatted `module.method(callback(err, data){ ... })` can be called with `calibrate.get()`. The resulting values can be accessed via a promise:
+Any module with a method formatted `module.method(callback(err, data){ ... })` can be called with `calibrate.get(module, 'method')`. The resulting values can be accessed via a promise:
 ```
-calibrate.get().then() 
+calibrate.get(module, 'method').then() 
 ```
 or as an event: 
 ```
-calibrate.get(); 
+calibrate.get(module, 'method'); 
 calibrate.on(‘calibrated’, callback);
 ```
 
